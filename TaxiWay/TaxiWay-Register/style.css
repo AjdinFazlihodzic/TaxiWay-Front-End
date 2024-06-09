@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100em;
+    max-width: 400px; /* Dodato za mobilne uređaje */
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    color: #92DCE5;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #666;
+    font-size:1.2em;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 19px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    margin-bottom: 20px;
+    color: #92DCE5;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    background-color: #92DCE5;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #92DCE5;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #ccc; /* Postavi boju teksta i linija */
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 2px solid #ccc; /* Postavi boju linija */
+}
+
+.separator:not(:empty)::before {
+    margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: 0.25em;
+}
+
+.separator span {
+    color: #ccc; /* Postavi boju teksta */
+    font-size: 14px;
+}
+
+.register a {
+    color: #92DCE5;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+/* Media query za mobilne uređaje */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px; /* Smanji padding za manje ekrane */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Smanji veličinu fonta za manje ekrane */
+    }
+
+    .form input {
+        padding: 10px; /* Smanji padding unutar input polja za manje ekrane */
+        font-size: 14px; /* Smanji veličinu fonta za manje ekrane */
+    }
+
+    button {
+        padding: 10px; /* Smanji padding za dugme za manje ekrane */
+        font-size: 14px; /* Smanji veličinu fonta za dugme za manje ekrane */
+    }
+}
